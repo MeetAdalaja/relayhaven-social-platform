@@ -1,5 +1,5 @@
 syntax = "proto3";
-package chirp.comments;
+package relayhaven.comments;
 
 import "common.proto";
 
@@ -30,9 +30,9 @@ message GetPostCommentsRequest {
 message CommentResponse {
   string id = 1;
   string content = 2;
-  chirp.common.Timestamp created_at = 3;
+  relayhaven.common.Timestamp created_at = 3;
   optional string parent_id = 4;
-  chirp.common.Author author = 5;
+  relayhaven.common.Author author = 5;
   int32 like_count = 6;
   bool is_liked = 7;
   repeated CommentResponse replies = 8;

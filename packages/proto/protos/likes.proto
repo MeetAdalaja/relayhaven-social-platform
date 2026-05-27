@@ -1,5 +1,5 @@
 syntax = "proto3";
-package chirp.likes;
+package relayhaven.likes;
 
 service LikesService {
   rpc TogglePostLike(TogglePostLikeRequest) returns (LikeResponse);

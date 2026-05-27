@@ -29,13 +29,13 @@ importers:
 
   apps/api:
     dependencies:
-      '@chirp/db-schema':
+      '@relayhaven/db-schema':
         specifier: workspace:*
         version: link:../../packages/db-schema
-      '@chirp/proto':
+      '@relayhaven/proto':
         specifier: workspace:*
         version: link:../../packages/proto
-      '@chirp/shared-types':
+      '@relayhaven/shared-types':
         specifier: workspace:*
         version: link:../../packages/shared-types
       '@elysiajs/node':
@@ -87,13 +87,13 @@ importers:
 
   apps/client-admin:
     dependencies:
-      '@chirp/grpc-client':
+      '@relayhaven/grpc-client':
         specifier: workspace:*
         version: link:../../packages/grpc-client
-      '@chirp/proto':
+      '@relayhaven/proto':
         specifier: workspace:*
         version: link:../../packages/proto
-      '@chirp/ui':
+      '@relayhaven/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       '@grpc/grpc-js':
@@ -202,13 +202,13 @@ importers:
 
   apps/client-user:
     dependencies:
-      '@chirp/grpc-client':
+      '@relayhaven/grpc-client':
         specifier: workspace:*
         version: link:../../packages/grpc-client
-      '@chirp/proto':
+      '@relayhaven/proto':
         specifier: workspace:*
         version: link:../../packages/proto
-      '@chirp/ui':
+      '@relayhaven/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       '@grpc/grpc-js':
@@ -327,7 +327,7 @@ importers:
 
   packages/grpc-client:
     dependencies:
-      '@chirp/proto':
+      '@relayhaven/proto':
         specifier: workspace:*
         version: link:../proto
       '@grpc/grpc-js':

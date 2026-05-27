@@ -1,5 +1,5 @@
 syntax = "proto3";
-package chirp.admin;
+package relayhaven.admin;
 
 import "common.proto";
 
@@ -31,7 +31,7 @@ service AdminService {
 // User Management Messages
 message ListUsersRequest {
   string session_token = 1;
-  chirp.common.PaginationRequest pagination = 2;
+  relayhaven.common.PaginationRequest pagination = 2;
   optional string search_query = 3;
   optional string role_filter = 4;
 }
@@ -49,9 +49,9 @@ message AdminUserResponse {
   optional string avatar_url = 5;
   optional string bio = 6;
   string role = 7;
-  chirp.common.Timestamp created_at = 8;
-  chirp.common.Timestamp updated_at = 9;
-  optional chirp.common.Timestamp banned_at = 10;
+  relayhaven.common.Timestamp created_at = 8;
+  relayhaven.common.Timestamp updated_at = 9;
+  optional relayhaven.common.Timestamp banned_at = 10;
   optional string banned_reason = 11;
   int32 post_count = 12;
   int32 comment_count = 13;
@@ -134,7 +134,7 @@ message DeleteCommentAdminResponse {
 // Reports Messages
 message ListReportsRequest {
   string session_token = 1;
-  chirp.common.PaginationRequest pagination = 2;
+  relayhaven.common.PaginationRequest pagination = 2;
   optional string status_filter = 3;
   optional string type_filter = 4;
 }
@@ -159,8 +159,8 @@ message ReportResponse {
   optional string description = 7;
   string status = 8;
   optional string reviewed_by = 9;
-  optional chirp.common.Timestamp reviewed_at = 10;
-  chirp.common.Timestamp created_at = 11;
+  optional relayhaven.common.Timestamp reviewed_at = 10;
+  relayhaven.common.Timestamp created_at = 11;
 }
 
 message ReviewReportRequest {
@@ -193,7 +193,7 @@ message DashboardStatsResponse {
 // Audit Messages
 message GetAuditLogsRequest {
   string session_token = 1;
-  chirp.common.PaginationRequest pagination = 2;
+  relayhaven.common.PaginationRequest pagination = 2;
   optional string admin_id_filter = 3;
   optional string action_filter = 4;
 }
@@ -212,5 +212,5 @@ message AuditLogResponse {
   optional string target_id = 6;
   optional string details = 7;
   optional string ip_address = 8;
-  chirp.common.Timestamp created_at = 9;
+  relayhaven.common.Timestamp created_at = 9;
 }

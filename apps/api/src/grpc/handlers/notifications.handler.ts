@@ -1,4 +1,4 @@
-import type { INotificationsService } from "@chirp/proto";
+import type { INotificationsService } from "@relayhaven/proto";
 import { validateSessionToken } from "../../middleware/auth";
 import {
 	deleteNotification,

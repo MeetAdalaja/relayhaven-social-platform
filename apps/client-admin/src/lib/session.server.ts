@@ -13,7 +13,7 @@ const SESSION_SECRET =
 export function useAdminSession() {
 	return useSession<AdminSessionData>({
 		password: SESSION_SECRET,
-		name: "chirp-admin-session",
+		name: "relayhaven-admin-session",
 		cookie: {
 			httpOnly: true,
 			secure: process.env.NODE_ENV === "production",

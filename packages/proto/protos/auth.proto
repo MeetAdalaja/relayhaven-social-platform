@@ -1,5 +1,5 @@
 syntax = "proto3";
-package chirp.auth;
+package relayhaven.auth;
 
 import "common.proto";
 
@@ -61,5 +61,5 @@ message UserResponse {
   optional string avatar_url = 5;
   optional string bio = 6;
   string role = 7;
-  chirp.common.Timestamp created_at = 8;
+  relayhaven.common.Timestamp created_at = 8;
 }

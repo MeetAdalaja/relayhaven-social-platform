@@ -1,5 +1,5 @@
 syntax = "proto3";
-package chirp.notifications;
+package relayhaven.notifications;
 
 import "common.proto";
 
@@ -15,12 +15,12 @@ message Notification {
   string id = 1;
   string type = 2;
   bool read = 3;
-  chirp.common.Author actor = 4;
+  relayhaven.common.Author actor = 4;
   optional string post_id = 5;
   optional string comment_id = 6;
   optional string post_content = 7;
   optional string comment_content = 8;
-  chirp.common.Timestamp created_at = 9;
+  relayhaven.common.Timestamp created_at = 9;
 }
 
 message GetNotificationsRequest {

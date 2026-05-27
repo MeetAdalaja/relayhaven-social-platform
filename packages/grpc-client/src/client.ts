@@ -10,16 +10,16 @@ import {
 	PostsServiceClient,
 	SearchServiceClient,
 	UsersServiceClient,
-} from "@chirp/proto";
+} from "@relayhaven/proto";
 import { ChannelCredentials } from "@grpc/grpc-js";
 import { GrpcTransport } from "@protobuf-ts/grpc-transport";
 
-export interface ChirpClientConfig {
+export interface RelayHavenClientConfig {
 	host: string;
 	secure?: boolean;
 }
 
-export interface ChirpClient {
+export interface RelayHavenClient {
 	auth: AuthServiceClient;
 	posts: PostsServiceClient;
 	comments: CommentsServiceClient;
@@ -35,9 +35,9 @@ export interface ChirpClient {
 }
 
 /**
- * Creates a gRPC client for the Chirp API
+ * Creates a gRPC client for the RelayHaven API
  */
-export function createChirpClient(config: ChirpClientConfig): ChirpClient {
+export function createRelayHavenClient(config: RelayHavenClientConfig): RelayHavenClient {
 	const { host, secure = false } = config;
 
 	const channelCredentials = secure

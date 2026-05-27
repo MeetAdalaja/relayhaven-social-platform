@@ -1,5 +1,5 @@
 syntax = "proto3";
-package chirp.posts;
+package relayhaven.posts;
 
 import "common.proto";
 
@@ -31,9 +31,9 @@ message GetPostRequest {
 message PostResponse {
   string id = 1;
   string content = 2;
-  chirp.common.Timestamp created_at = 3;
-  chirp.common.Timestamp updated_at = 4;
-  chirp.common.Author author = 5;
+  relayhaven.common.Timestamp created_at = 3;
+  relayhaven.common.Timestamp updated_at = 4;
+  relayhaven.common.Author author = 5;
   int32 like_count = 6;
   int32 comment_count = 7;
   bool is_liked = 8;
@@ -61,7 +61,7 @@ message DeletePostResponse {
 }
 
 message GetPostsRequest {
-  chirp.common.PaginationRequest pagination = 1;
+  relayhaven.common.PaginationRequest pagination = 1;
   optional string session_token = 2;
 }
 

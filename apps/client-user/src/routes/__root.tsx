@@ -21,7 +21,7 @@ export const Route = createRootRoute({
 				content: "light dark",
 			},
 			{
-				title: "Chirp - Social Feed",
+				title: "RelayHaven Social",
 			},
 		],
 		links: [

@@ -1,4 +1,4 @@
-import { type ChirpClient, createChirpClient } from "@chirp/grpc-client";
+import { type RelayHavenClient, createRelayHavenClient } from "@relayhaven/grpc-client";
 import jwt from "jsonwebtoken";
 import { type AdminSessionData, getAdminSessionData } from "./session.server";
 
@@ -9,14 +9,14 @@ const JWT_SECRET = process.env.GRPC_JWT_SECRET || "chirp-grpc-jwt-secret-key-at-
 const GRPC_HOST = process.env.GRPC_API_HOST || "localhost:50051";
 
 // Singleton gRPC client
-let grpcClient: ChirpClient | null = null;
+let grpcClient: RelayHavenClient | null = null;
 
 /**
  * Get or create the gRPC client singleton
  */
-export function getGrpcClient(): ChirpClient {
+export function getGrpcClient(): RelayHavenClient {
 	if (!grpcClient) {
-		grpcClient = createChirpClient({
+		grpcClient = createRelayHavenClient({
 			host: GRPC_HOST,
 			secure: process.env.NODE_ENV === "production",
 		});

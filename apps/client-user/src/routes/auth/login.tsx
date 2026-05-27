@@ -282,9 +282,9 @@ function LoginPage() {
 					<div {...stylex.props(styles.brandingLogo)}>
 						<MessageCircle size={48} {...stylex.props(styles.iconWhite)} />
 					</div>
-					<h1 {...stylex.props(styles.brandingTitle)}>Chirp</h1>
+					<h1 {...stylex.props(styles.brandingTitle)}>RelayHaven</h1>
 					<p {...stylex.props(styles.brandingSubtitle)}>
-						Connect with friends and share what's happening in your world.
+						Connect, share and engage in a safer social space.
 					</p>
 				</div>
 			</div>
@@ -301,7 +301,7 @@ function LoginPage() {
 
 					<div {...stylex.props(styles.card)}>
 						<h2 {...stylex.props(styles.heading)}>Welcome back</h2>
-						<p {...stylex.props(styles.subheading)}>Sign in to continue to Chirp</p>
+						<p {...stylex.props(styles.subheading)}>Sign in to continue to RelayHaven Social</p>
 
 						<form onSubmit={handleSubmit} {...stylex.props(styles.form)}>
 							{error && (

@@ -11,7 +11,7 @@ const SESSION_SECRET = process.env.SESSION_SECRET || "chirp-session-secret-key-a
 export function useAppSession() {
 	return useSession<SessionData>({
 		password: SESSION_SECRET,
-		name: "chirp-session",
+		name: "relayhaven-session",
 		cookie: {
 			httpOnly: true,
 			secure: process.env.NODE_ENV === "production",

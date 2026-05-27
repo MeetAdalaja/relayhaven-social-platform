@@ -16,7 +16,7 @@ const config = defineConfig({
 	resolve: {
 		alias: {
 			"@": path.resolve(currentDir, "src"),
-			"@chirp/ui": uiPackageDir,
+			"@relayhaven/ui": uiPackageDir,
 		},
 	},
 	plugins: [

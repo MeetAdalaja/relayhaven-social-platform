@@ -1,11 +1,11 @@
 syntax = "proto3";
-package chirp.search;
+package relayhaven.search;
 
 import "common.proto";
 import "posts.proto";
 
 service SearchService {
-  rpc SearchPosts(SearchRequest) returns (chirp.posts.PostsResponse);
+  rpc SearchPosts(SearchRequest) returns (relayhaven.posts.PostsResponse);
   rpc SearchUsers(SearchRequest) returns (UsersResponse);
 }
 

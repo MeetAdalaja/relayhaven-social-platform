@@ -1,5 +1,5 @@
 syntax = "proto3";
-package chirp.follows;
+package relayhaven.follows;
 
 service FollowsService {
   rpc ToggleFollow(ToggleFollowRequest) returns (FollowResponse);

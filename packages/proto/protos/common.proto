@@ -1,5 +1,5 @@
 syntax = "proto3";
-package chirp.common;
+package relayhaven.common;
 
 message Timestamp {
   int64 seconds = 1;
