@@ -32,7 +32,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
 	body {
-		background: linear-gradient(145deg, #0c1222 0%, #111a2e 40%, #0f172a 100%);
+		background: linear-gradient(145deg, #0c1222 0%, #112e2b 40%, #4d5d84 100%);
 		color: #e2e8f0;
 	}
 }
